@@ -253,10 +253,6 @@ a {
     transition: background-color 1s;
 }
 
-.half-circle:hover {
-    background-color: deeppink;
-}
-
 .socialMedia {
     margin: 0 auto;
     padding-top: 150px;

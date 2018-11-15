@@ -1,0 +1,418 @@
+* {
+    font-family: 'Quicksand', sans-serif;
+}
+
+body {
+    font-size: 1em;
+}
+
+/* HOME IMAGE */
+
+#homeImage {
+    background-image: url(../img/wendy1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+}
+
+/* TITLE */
+
+#titleContainer1 {
+    width: 500px;
+    height: 10px;
+    margin: 0 auto;
+    /* Thank you jesus. Work smart, not hard */
+    font-size: 3em;
+
+}
+
+#titleContainer2 {
+    background-color: deeppink;
+    width: 500px;
+    height: 10px;
+    display: flex;
+    /* Thank you jesus. Work smart, not hard */
+    align-items: center;
+    /* Thank you jesus. Work smart, not hard */
+}
+
+#homeTitle {
+    height: 100px;
+    margin: 0 auto;
+    /* Thank you jesus. Work smart, not hard */
+}
+
+/* SLOGAN */
+
+#sloganContainer1 {
+    width: 500px;
+    margin: 0 auto;
+    /* Thank you jesus. Work smart, not hard */
+    height: 0px;
+    padding-top: 350px;
+    font-size: 1.5em;
+}
+
+#sloganContainer2 {
+    background-color: deeppink;
+    width: 500px;
+    height: 0px;
+    display: flex;
+    /* Thank you jesus. Work smart, not hard */
+    align-items: center;
+    /* Thank you jesus. Work smart, not hard */
+}
+
+#homeSlogan {
+    height: 100px;
+    margin: 0 auto;
+}
+
+.wrapperBio {
+    padding-top: 150px;
+}
+
+.bio {
+    text-align: center;
+    font-size: 2em;
+
+    padding-bottom: 100px;
+    padding-top: 500px;
+
+    margin: 0;
+    color: black;
+}
+
+/* SECTION TITLE */
+
+.sectionContainer {
+    height: 200px;
+}
+
+.sectionContainerA {
+    background-color: #EE1F27;
+    height: 0;
+    width: 0;
+    display: inline-block;
+    /* constrains width of contained to size of text */
+    border-top: 300px solid #EE1F27;
+    border-left: 300px solid white;
+    border-right: 300px solid white;
+
+}
+
+.sectionContainerB {
+    background-color: blue;
+    width: 0;
+    height: 0;
+    display: inline-block;
+    /* constrains width of contained to size of text */
+    border-top: 300px solid white;
+    border-left: 300px solid #EE1F27;
+    border-right: 300px solid #EE1F27;
+}
+
+.sectionTitle {
+    font-size: 5em;
+    padding-left: 50px;
+    padding-right: 50px;
+    position: relative;
+    top: -200px;
+}
+
+#theOckhamAnthology {
+    font-size: 3em;
+}
+
+/* POEM LINKS */
+
+a {
+    display: inline-block;
+}
+
+.poemItem {
+    width: 300px;
+    height: 300px;
+    background-color: #EDEDED;
+    display: inline-block;
+    margin: 1vw;
+    border: solid black;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: black;
+}
+
+.poemItem:hover {
+    position: relative;
+    right: 15px;
+    bottom: 15px;
+    box-shadow: 15px 15px;
+}
+
+.a poemItem:visited {
+    background-color: deeppink;
+}
+
+.poemItemTitle {
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 24px;
+    min-height: 50%;
+}
+
+.meta {
+    color: gray;
+}
+
+.poemButtonB,
+.poemButtonA {
+    font-size: 2em;
+    text-decoration-color: lightgray;
+    margin: 0 0 0 0;
+    border: 0;
+    padding: 25px 50px;
+    border-radius: 0 0 0 0;
+    width: 50vw;
+    color: white;
+}
+
+.poemButtonA {
+    background-color: white;
+    color: black;
+}
+
+.poemButtonB {
+    background-color: #EE1F27;
+    color: black;
+}
+
+.A {
+    background-color: white;
+}
+
+.B {
+    background-color: #EE1F27;
+}
+
+.A,
+.B {
+    text-align: center;
+}
+
+/* POEMS */
+
+.sectionContainerC {
+    width: 0;
+    height: 0;
+    display: inline-block;
+    /* constrains width of contained to size of text */
+    border-top: 300px solid deeppink;
+    border-left: 300px solid white;
+    border-right: 300px solid white;
+}
+
+.poemTitle {
+    text-align: center;
+    font-size: 3em;
+    margin: -200px;
+}
+
+.wrapperPoemItems {
+    padding-bottom: 50px;
+}
+
+.wrapperPoemBody {
+    width: 70vw;
+    text-align: center;
+    display: inline-block;
+    padding-top: 400px;
+}
+
+.poemBody {
+    text-align: center;
+    font-size: 2em;
+    margin: 0;
+    color: black;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+/* SOCIAL MEDIA */
+
+.half-circle {
+    width: 600px;
+    height: 300px;
+    background-color: DeepSkyBlue;
+    border-top-left-radius: 300px;
+    border-top-right-radius: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    transition: background-color 1s;
+}
+
+.half-circle:hover {
+    background-color: deeppink;
+}
+
+.socialMedia {
+    margin: 0 auto;
+    padding-top: 150px;
+}
+
+.btn {
+    color: black;
+}
+
+.btn:hover {
+    color: white
+}
+
+p {
+    margin: 0;
+}
+
+/* NAVBAR */
+
+.navbar {
+    font-size: 1em;
+    font-family: 'Comfortaa', cursive;
+    border-bottom: solid;
+}
+
+.wrapperNav {
+    text-align: center;
+}
+
+#mainNav a.nav-link {
+    color: black;
+}
+
+#mainNav .navbar-nav {
+    letter-spacing: .0625rem
+}
+
+/* the link you are hovering on */
+
+#mainNav .navbar-nav li.nav-item a.nav-link:hover {
+    color: #EE1F27;
+}
+
+/* the link you are clicking or have clicked */
+
+#mainNav .navbar-nav li.nav-item a.nav-link:active,
+#mainNav .navbar-nav li.nav-item a.nav-link:focus {
+    color: #EE1F27;
+}
+
+/* the link you are currently scrolling on */
+
+#mainNav .navbar-nav li.nav-item a.nav-link.active {
+    color: #EE1F27
+}
+
+#mainNav .navbar-toggler {
+    font-size: 80%;
+    padding: .8rem
+}
+
+#mainNav {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-weight: 700;
+}
+
+/* RESPONSIVENESS */
+
+#dropdownMenuButton {
+    color: black;
+}
+
+/* large:extra large */
+
+@media screen and (min-width: 992px) {
+    .dropdown {
+        display: none;
+    }
+    .bio {
+        padding-top: 600px;
+    }
+}
+
+
+/* medium */
+
+@media screen and (max-width: 992px) {
+    #titleContainer1,
+    #titleContainer2,
+    #sloganContainer1,
+    #sloganContainer2 {
+        width: 400px;
+    }
+    display: inline;
+}
+    .bio {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+/* small */
+
+@media screen and (max-width: 768px) {
+    #titleContainer1,
+    #titleContainer2,
+    #sloganContainer1,
+    #sloganContainer2 {
+        width: 400px;
+    }
+    .bio {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+}
+
+/* extra small */
+
+@media screen and (max-width: 576px) {
+
+/*
+    #marriage,#depression,#politics,#hedonism  {
+        font-size: 3em;
+    }
+    
+    #theOckhamAnthology {
+        font-size: 3em;
+    }
+    
+    #titleContainer1,
+    #titleContainer2,
+    #sloganContainer1,
+    #sloganContainer2 {
+        width: 400px;
+    }
+
+    .sectionContainerA {
+
+        display: inline-block;
+        border-top: 200px solid #EE1F27;
+        border-left: 200px solid white;
+        border-right: 200px solid white;
+
+    }
+    .sectionContainerB {
+
+        display: inline-block;
+        border-top: 200px solid white;
+        border-left: 200px solid #EE1F27;
+        border-right: 200px solid #EE1F27;
+    }
+*/
+}
+
+
+/*
+
+
+*/

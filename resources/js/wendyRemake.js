@@ -1,5 +1,5 @@
         //grow top half of title rectangle
-        function topGrow() {
+        function topGrow(doLater) {
             var elem = document.getElementById("titleContainer2");
             var pos = 0;
             var id = setInterval(frame, 1);
@@ -29,6 +29,8 @@
 
             function frame() {
                 if (pos == max) { //maximum height
+                    
+                    doLater(); /* rotate functon takes place after grow function ends */
                     clearInterval(id);
                 } else {
                     pos++;
@@ -55,7 +57,7 @@
         }
 
 
-        function bottomGrow() { //grow bottom half of rectangle
+        function bottomGrow(doLater) { //grow bottom half of rectangle
             var elem = document.getElementById("sloganContainer2");
             var pos = 0;
             var id = setInterval(frame, 1);
@@ -85,6 +87,7 @@
 
             function frame() {
                 if (pos == max) {
+                    doLater(); /* rotate functon takes place after grow function ends */
                     clearInterval(id);
                 } else {
                     pos++;

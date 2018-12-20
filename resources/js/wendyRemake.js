@@ -155,4 +155,5 @@
             window.open("https://www.facebook.com/sharer/sharer.php?u=" + encodeURIComponent(urlfb));
         }, false);
 
+
         //navbar smoothscroll

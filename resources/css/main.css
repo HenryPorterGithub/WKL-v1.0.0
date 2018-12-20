@@ -6,6 +6,10 @@ body {
     font-size: 1em;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /* HOME IMAGE */
 
 #homeImage {
@@ -13,7 +17,7 @@ body {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
 }
 
@@ -340,6 +344,15 @@ p {
     padding-top: 0;
 }
 
+#ockhamLink {
+    position: relative;
+    top: -60px;
+}
+
+.bio {
+    padding-top: 300px;
+}
+
 /* large:extra large */
 
 @media screen and (min-width: 992px) {
@@ -347,9 +360,6 @@ p {
         display: none;
     }
 
-    .bio {
-        padding-top: 300px;
-    }
 }
 
 /* medium */
@@ -388,25 +398,71 @@ p {
         left: 20vw;
     }
 
+    .poemItem {
+        height: 200px;
+        width: 200px;
+    }
+
+    .poemItemTitle {
+        font-size: 1.25em;
+    }
+
+    .sectionContainerA {
+        border-top: 200px solid #EE1F27;
+        border-left: 200px solid white;
+        border-right: 200px solid white;
+    }
+
+    .sectionContainerB {
+        border-top: 200px solid white;
+        border-left: 200px solid #EE1F27;
+        border-right: 200px solid #EE1F27;
+    }
+    
+    .sectionTitle {
+        font-size: 3em;
+    }
+    
+    .bio {
+        font-size: 1.5em;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    
+    .wrapperPoemItems {
+        padding-top: 0px;
+    }
+    
+        #theOckhamAnthology {
+        font-size: 2em;
+    }
+    
+        #ockhamWrapper {
+        position: relative;
+        top: -50px;
+    }
+
 }
 
 /* extra small */
 
 @media screen and (max-width: 576px) {
-    
+
     #mainNav {
         height: 50px;
     }
+
     #dropdownMenuButton {
         font-size: 10px;
-        position:relative;
-        top:-12.5px;
+        position: relative;
+        top: -12.5px;
     }
+
     #home {
-        position:relative;
-        top:-6px;
+        position: relative;
+        top: -6px;
     }
-    
+
     #titleContainer1,
     #titleContainer2,
     #sloganContainer1,
@@ -418,22 +474,22 @@ p {
         position: relative;
         left: 15vw;
     }
-    
+
     #homeTitle {
         font-size: 0.5em;
         height: 50px;
     }
-    
+
     #homeSlogan {
         font-size: 0.6em;
         height: 75px;
     }
-    
+
     #sloganContainer2 {
         position: relative;
         top: -150px;
     }
-    
+
     .bio {
         font-size: 1em;
         padding-top: 0;
@@ -462,25 +518,25 @@ p {
         border-left: 150px solid #EE1F27;
         border-right: 150px solid #EE1F27;
     }
-    
+
     .sectionTitle {
         font-size: 2em;
     }
-    
+
     #theOckhamAnthology {
         font-size: 1.5em;
     }
-    
+
     .wrapperPoemItems {
-        position:relative;
+        position: relative;
         top: -50px;
         padding-bottom: 0;
         padding-top: 0;
     }
-    
+
     #ockhamWrapper {
-        position:relative;
-        top:-100px;
+        position: relative;
+        top: -100px;
     }
 }
 

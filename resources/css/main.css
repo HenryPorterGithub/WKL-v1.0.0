@@ -25,7 +25,6 @@ body {
     margin: 0 auto;
     /* Thank you jesus. Work smart, not hard */
     font-size: 3em;
-
 }
 
 #titleContainer2 {
@@ -77,10 +76,7 @@ body {
 .bio {
     text-align: center;
     font-size: 2em;
-
     padding-bottom: 100px;
-    padding-top: 500px;
-
     margin: 0;
     color: black;
 }
@@ -100,7 +96,6 @@ body {
     border-top: 300px solid #EE1F27;
     border-left: 300px solid white;
     border-right: 300px solid white;
-
 }
 
 .sectionContainerB {
@@ -221,6 +216,7 @@ a {
 
 .wrapperPoemItems {
     padding-bottom: 50px;
+    padding-top: 50px;
 }
 
 .wrapperPoemBody {
@@ -326,89 +322,167 @@ p {
     color: black;
 }
 
+.bio {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.sectionLink {
+    position: relative;
+    top: -50px;
+}
+
+#animationDiv {
+    height: 100vh;
+}
+
+.wrapperBio {
+    padding-top: 0;
+}
+
 /* large:extra large */
 
 @media screen and (min-width: 992px) {
     .dropdown {
         display: none;
     }
+
     .bio {
-        padding-top: 600px;
+        padding-top: 500px;
     }
 }
-
 
 /* medium */
 
 @media screen and (max-width: 992px) {
+    #facebook {
+        display: none;
+    }
+
     #titleContainer1,
     #titleContainer2,
     #sloganContainer1,
     #sloganContainer2 {
         width: 400px;
     }
-    display: inline;
-}
-    .bio {
-        margin-left: 50px;
-        margin-right: 50px;
+
+    #home {
+        position: relative;
+        left: 20vw;
     }
+}
 
 /* small */
 
 @media screen and (max-width: 768px) {
+
     #titleContainer1,
     #titleContainer2,
     #sloganContainer1,
     #sloganContainer2 {
         width: 400px;
     }
-    .bio {
-        margin-left: 50px;
-        margin-right: 50px;
+
+    #home {
+        position: relative;
+        left: 20vw;
     }
+
 }
 
 /* extra small */
 
 @media screen and (max-width: 576px) {
-
-/*
-    #marriage,#depression,#politics,#hedonism  {
-        font-size: 3em;
-    }
     
-    #theOckhamAnthology {
-        font-size: 3em;
+    #mainNav {
+        height: 50px;
+    }
+    #dropdownMenuButton {
+        font-size: 10px;
+        position:relative;
+        top:-12.5px;
+    }
+    #home {
+        position:relative;
+        top:-6px;
     }
     
     #titleContainer1,
     #titleContainer2,
     #sloganContainer1,
     #sloganContainer2 {
-        width: 400px;
+        width: 200px;
+    }
+
+    #home {
+        position: relative;
+        left: 15vw;
+    }
+    
+    #homeTitle {
+        font-size: 0.5em;
+        height: 50px;
+    }
+    
+    #homeSlogan {
+        font-size: 0.6em;
+        height: 75px;
+    }
+    
+    #sloganContainer2 {
+        position: relative;
+        top: -150px;
+    }
+    
+    .bio {
+        font-size: 1em;
+        padding-top: 0;
+        margin-left: 25px;
+        margin-right: 25px;
+        padding-bottom: 50px;
+    }
+
+    .poemItem {
+        height: 150px;
+        width: 150px;
+    }
+
+    .poemItemTitle {
+        font-size: 1em;
     }
 
     .sectionContainerA {
-
-        display: inline-block;
-        border-top: 200px solid #EE1F27;
-        border-left: 200px solid white;
-        border-right: 200px solid white;
-
+        border-top: 150px solid #EE1F27;
+        border-left: 150px solid white;
+        border-right: 150px solid white;
     }
+
     .sectionContainerB {
-
-        display: inline-block;
-        border-top: 200px solid white;
-        border-left: 200px solid #EE1F27;
-        border-right: 200px solid #EE1F27;
+        border-top: 150px solid white;
+        border-left: 150px solid #EE1F27;
+        border-right: 150px solid #EE1F27;
     }
-*/
+    
+    .sectionTitle {
+        font-size: 2em;
+    }
+    
+    #theOckhamAnthology {
+        font-size: 1.5em;
+    }
+    
+    .wrapperPoemItems {
+        position:relative;
+        top: -50px;
+        padding-bottom: 0;
+        padding-top: 0;
+    }
+    
+    #ockhamWrapper {
+        position:relative;
+        top:-100px;
+    }
 }
 
-
 /*
-
-
 */

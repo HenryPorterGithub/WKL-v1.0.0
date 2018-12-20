@@ -6,8 +6,13 @@
 
             //responsive javascript
 
-            //extra small
-            if (document.documentElement.clientWidth <= 768) {
+            //large:extra large
+            if (document.documentElement.clientWidth > 992) {
+                var max = 500;
+            }
+
+            //medium
+            if (document.documentElement.clientWidth <= 992) {
                 var max = 400;
             }
 
@@ -16,20 +21,15 @@
                 var max = 400;
             }
 
-            //medium
-            if (document.documentElement.clientWidth <= 992) {
-                var max = 400;
+            //extra small
+            if (document.documentElement.clientWidth <= 576) {
+                var max = 200;
             }
 
-            //large:extra large
-            if (document.documentElement.clientWidth > 992) {
-                var max = 500;
-            }
-
+            console.log(max);
 
             function frame() {
                 if (pos == max) { //maximum height
-                    
                     doLater(); /* rotate functon takes place after grow function ends */
                     clearInterval(id);
                 } else {
@@ -56,7 +56,6 @@
             }
         }
 
-
         function bottomGrow(doLater) { //grow bottom half of rectangle
             var elem = document.getElementById("sloganContainer2");
             var pos = 0;
@@ -64,8 +63,13 @@
 
             //responsive javascript          
 
-            //extra small
-            if (document.documentElement.clientWidth <= 768) {
+            //large:extra large
+            if (document.documentElement.clientWidth > 992) {
+                var max = 500;
+            }
+
+            //medium
+            if (document.documentElement.clientWidth <= 992) {
                 var max = 400;
             }
 
@@ -74,14 +78,9 @@
                 var max = 400;
             }
 
-            //medium
-            if (document.documentElement.clientWidth <= 992) {
-                var max = 400;
-            }
-
-            //large:extra large
-            if (document.documentElement.clientWidth > 992) {
-                var max = 500;
+            //extra small
+            if (document.documentElement.clientWidth <= 576) {
+                var max = 200;
             }
 
 
@@ -138,22 +137,6 @@
             alert(href);
             return false;
         }
-        
-        //google +
-        function gshareCurrentPage() {
-            window.open("https://plus.google.com/share?url=" + escape(window.location.href) + "&t=" + document.title, '',
-                'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');
-
-            return false;
-        }
-
-        //stumble upon
-        function sushareCurrentPage() {
-            window.open("http://www.stumbleupon.com/badge?url" + escape(window.location.href) + "&t=" + document.title, '',
-                'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');
-            
-            return false;
-        }
 
         //twitter
         function tshareCurrentPage() {
@@ -162,4 +145,4 @@
             return false;
         }
 
-
+        //navbar smoothscroll

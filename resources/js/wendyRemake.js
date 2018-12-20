@@ -134,15 +134,24 @@
         function fbshareCurrentPage() {
             window.open("https://www.facebook.com/sharer/sharer.php?u=" + escape(window.location.href) + "&t=" + document.title, '',
                 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');
-            alert(href);
             return false;
         }
 
         //twitter
         function tshareCurrentPage() {
-            window.open("https://twitter.com/home?status=" + escape(window.location.href) + "&t=" + document.title, '',
+            window.open("https://twitter.com/share?url=" + escape(window.location.href) + "&t=" + document.title, '',
                 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');
             return false;
         }
+
+        var link = document.getElementById('tweetShare');
+        var url = window.location;
+
+        link.addEventListener('click', function (event) {
+            event.preventDefault();
+
+            window.open("https://twitter.com/share?url=" + encodeURIComponent(url));
+            alert(url)
+        }, false);
 
         //navbar smoothscroll

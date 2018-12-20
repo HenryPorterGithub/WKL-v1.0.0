@@ -139,11 +139,20 @@
 
         //twitter
         var link = document.getElementById('tweetShare');
-        var url = window.location;
+        var urlt = window.location;
 
         link.addEventListener('click', function (event) {
             event.preventDefault();
-            window.open("https://twitter.com/share?url=" + encodeURIComponent(url));
+            window.open("https://twitter.com/share?url=" + encodeURIComponent(urlt));
+        }, false);
+
+        //facebook
+        var link = document.getElementById('fbShare');
+        var urlfb = window.location;
+
+        link.addEventListener('click', function (event) {
+            event.preventDefault();
+            window.open("https://www.facebook.com/sharer/sharer.php?u=" + encodeURIComponent(urlfb));
         }, false);
 
         //navbar smoothscroll

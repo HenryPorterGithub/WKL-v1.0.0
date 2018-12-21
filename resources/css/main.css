@@ -353,10 +353,21 @@ p {
     padding-top: 300px;
 }
 
+.sectionLink {
+    display: block;
+    position: relative;
+    top: -100px;
+    visibility: hidden;
+}
+
 /* large:extra large */
 
 @media screen and (min-width: 992px) {
     .dropdown {
+        display: none;
+    }
+    
+    #homeImage {
         display: none;
     }
 
@@ -379,6 +390,10 @@ p {
     #home {
         position: relative;
         left: 20vw;
+    }
+
+    .homeImage {
+        display: none;
     }
 }
 
@@ -418,28 +433,33 @@ p {
         border-left: 200px solid #EE1F27;
         border-right: 200px solid #EE1F27;
     }
-    
+
     .sectionTitle {
         font-size: 3em;
     }
-    
+
     .bio {
         font-size: 1.5em;
         padding-top: 50px;
         padding-bottom: 50px;
+        padding-top: 250px;
     }
-    
+
     .wrapperPoemItems {
         padding-top: 0px;
     }
-    
-        #theOckhamAnthology {
+
+    #theOckhamAnthology {
         font-size: 2em;
     }
-    
-        #ockhamWrapper {
+
+    #ockhamWrapper {
         position: relative;
         top: -50px;
+    }
+
+    #homeImage {
+        display: none;
     }
 
 }
@@ -448,26 +468,13 @@ p {
 
 @media screen and (max-width: 576px) {
 
-    #mainNav {
-        height: 50px;
-    }
-
-    #dropdownMenuButton {
-        font-size: 10px;
-        position: relative;
-        top: -12.5px;
-    }
-
-    #home {
-        position: relative;
-        top: -6px;
-    }
-
     #titleContainer1,
     #titleContainer2,
     #sloganContainer1,
     #sloganContainer2 {
         width: 200px;
+        position:relative;
+        top:30px;
     }
 
     #home {
@@ -538,7 +545,8 @@ p {
         position: relative;
         top: -100px;
     }
-}
 
-/*
-*/
+    #homeImage {
+        display: none;
+    }
+}
